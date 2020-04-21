@@ -1,0 +1,2169 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "password": "pbkdf2_sha256$180000$y2j7yPeEiXbi$1vIJleJoZX/GfLrw5wdqopZG4lqzNAr5umJsXM38bOc=",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 1,
+    "fields": {
+      "name": "Университеты",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_universities.jpg"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 2,
+    "fields": {
+      "name": "Рестораны",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_restaurants.jpg"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 3,
+    "fields": {
+      "name": "Бары",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_bars.jpg"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 4,
+    "fields": {
+      "name": "Кофейни",
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/category_coffee_shops.jpg"
+    }
+  },
+  {
+    "model": "api.type",
+    "pk": 1,
+    "fields": {
+      "name": "String",
+      "type": "str"
+    }
+  },
+  {
+    "model": "api.type",
+    "pk": 2,
+    "fields": {
+      "name": "Integer",
+      "type": "int"
+    }
+  },
+  {
+    "model": "api.type",
+    "pk": 3,
+    "fields": {
+      "name": "Boolean",
+      "type": "bool"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Локация"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Язык обучения"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Учеников на 1 учителя"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Дата основания"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Общага"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Дополнительные секции"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Качество обучения"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Документы при поступлении"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 9,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Стипендия"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 10,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Цена для граждан КР"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 11,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Цена для иностранных граждан"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 12,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Среднее увеличение цены в год"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 13,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Гранты в год на одного студента"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 14,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Число факультетов"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 15,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Количество кампусов"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 16,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Спортивные секции"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 17,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Развод"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 18,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Средняя цена за развод"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 19,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Государственная оценка"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 20,
+    "fields": {
+      "category": 1,
+      "type": 2,
+      "name": "Оценка по отзывам"
+    }
+  },
+  {
+    "model": "api.field",
+    "pk": 21,
+    "fields": {
+      "category": 1,
+      "type": 1,
+      "name": "Отзывы"
+    }
+  }, {
+    "model": "api.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9C%D0%A3%D0%90.png",
+      "name": "МУА (Международный Университет Ала-Тоо)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "field": 1,
+      "data": {
+        "value": "Бишкек, ул. Анкары, 1/8, мкр. Тунгуч"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "field": 2,
+      "data": {
+        "value": "Английский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 3,
+    "fields": {
+      "product": 1,
+      "field": 3,
+      "data": {
+        "value": 35
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 4,
+    "fields": {
+      "product": 1,
+      "field": 4,
+      "data": {
+        "value":"В 1996"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 5,
+    "fields": {
+      "product": 1,
+      "field": 5,
+      "data": {
+        "value": "2 общежития при университете"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 6,
+    "fields": {
+      "product": 1,
+      "field": 6,
+      "data": {
+        "value": "Студенческий совет; V-Fund; Комуз клуб «Нур»; КВН; Alatoo - dance; Клуб Международных Отношений"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 7,
+    "fields": {
+      "product": 1,
+      "field": 7,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 8,
+    "fields": {
+      "product": 1,
+      "field": 8,
+      "data": {
+        "value": "Документ государственного образца о среднем общем или среднем профессиональном образовании (аттестат); Оригинал сертификата ОРТ; Копия паспорта; Приписное свидетельство или военный билет; 4 фотографии размером 3х4; Первоначальный платеж в размере 30% от общей стоимости обучения."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 9,
+    "fields": {
+      "product": 1,
+      "field": 9,
+      "data": {
+        "value": "4000 сом в год"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 10,
+    "fields": {
+      "product": 1,
+      "field": 10,
+      "data": {
+        "value": "От 72 000 до 280 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 11,
+    "fields": {
+      "product": 1,
+      "field": 11,
+      "data": {
+        "value": "От 200 000 до 280 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 12,
+    "fields": {
+      "product": 1,
+      "field": 12,
+      "data": {
+        "value": "Увеличивается с каждым годом примерно на 12 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 13,
+    "fields": {
+      "product": 1,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 14,
+    "fields": {
+      "product": 1,
+      "field": 14,
+      "data": {
+        "value": 14
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 15,
+    "fields": {
+      "product": 1,
+      "field": 15,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 16,
+    "fields": {
+      "product": 1,
+      "field": 16,
+      "data": {
+        "value": "Шахмат, тогуз коргоол, плавание, теннис, ордо греко-римская и вольная борьба, волейбол, баскетбол, футбол, дзюдо"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 17,
+    "fields": {
+      "product": 1,
+      "field": 17,
+      "data": {
+        "value": "Случаев развода в этом университете замечено не было"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 18,
+    "fields": {
+      "product": 1,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 19,
+    "fields": {
+      "product": 1,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 20,
+    "fields": {
+      "product": 1,
+      "field": 20,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 21,
+    "fields": {
+      "product": 1,
+      "field": 21,
+      "data": {
+        "value": "Смешанные, в основном позитивные"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9A%D0%93%D0%9C%D0%90.png",
+      "name": "КГМА (Кыргызская государственная медицинская академия)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 22,
+    "fields": {
+      "product": 2,
+      "field": 1,
+      "data": {
+        "value": "Бишкек, ул. И.Ахунбаева, 92"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 23,
+    "fields": {
+      "product": 2,
+      "field": 2,
+      "data": {
+        "value": "Английский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 24,
+    "fields": {
+      "product": 2,
+      "field": 3, "data": {
+        "value": 40
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 25,
+    "fields": {
+      "product": 2,
+      "field": 4,
+      "data": {
+        "value": "В 1939"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 26,
+    "fields": {
+      "product": 2,
+      "field": 5,
+      "data": {
+        "value": "6 общежитий по всему городу"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 27,
+    "fields": {
+      "product": 2,
+      "field": 6,
+      "data": {
+        "value": "Студенческий совет, несколько языковых клубов,танцы и походы в горы"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 28,
+    "fields": {
+      "product": 2,
+      "field": 7,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 29,
+    "fields": {
+      "product": 2,
+      "field": 8,
+      "data": {
+        "value": "Заявление на имя ректора КГМА (образец); Оригинал сертификата ОРТ; Документ о среднем образовании (аттестат); 2 фото (4x6 см), 4 фото (3x4 см); Военный билет или приписное свидетельство; Квитанция об оплате приема документов; Копия паспорта или удостоверения личности; "
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 30,
+    "fields": {
+      "product": 2,
+      "field": 9,
+      "data": {
+        "value": "1500 сом в месяц"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 31,
+    "fields": {
+      "product": 2,
+      "field": 10,
+      "data": {
+        "value": "От 25 000 до 66 000 сом."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 32,
+    "fields": {
+      "product": 2,
+      "field": 11,
+      "data": {
+        "value": "От 33 000 до 120 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 33,
+    "fields": {
+      "product": 2,
+      "field": 12,
+      "data": {
+        "value": "С каждым годом в среднем увеличивается на 2000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 34,
+    "fields": {
+      "product": 2,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 35,
+    "fields": {
+      "product": 2,
+      "field": 14,
+      "data": {
+        "value": 6
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 36,
+    "fields": {
+      "product": 2,
+      "field": 15,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 37,
+    "fields": {
+      "product": 2,
+      "field": 16,
+      "data": {
+        "value": "Турниры по футболу и теннису среди учащихся, а так же допольнительные секции почти всех видов"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 38,
+    "fields": {
+      "product": 2,
+      "field": 17,
+      "data": {
+        "value": "Развод был замечен в большинстве случаев"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 39,
+    "fields": {
+      "product": 2,
+      "field": 18,
+      "data": {
+        "value": "ТОП 1 по коррупции. Показатель коррупции составил 75%. Средняя стоимость одного предмета - 1 138 сомов. Чтобы закрыть сессию, студенты в среднем тратят 3 116 сомов."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 40,
+    "fields": {
+      "product": 2,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 41,
+    "fields": {
+      "product": 2,
+      "field": 20,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 42,
+    "fields": {
+      "product": 2,
+      "field": 21,
+      "data": {
+        "value": "В основном отрицательные"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%90%D0%A3%D0%A6%D0%90.png",
+      "name": "АУЦА (Американский Университет в Центральной Азии)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 43,
+    "fields": {
+      "product": 3,
+      "field": 1,
+      "data": {
+        "value": "Бишкек, ул. Аалы Токомбаева 7/6"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk":44,
+    "fields": {
+      "product": 3,
+      "field": 2,
+      "data": {
+        "value": "Английский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 45,
+    "fields": {
+      "product": 3,
+      "field": 3, "data": {
+        "value": 30
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 46,
+    "fields": {
+      "product": 3,
+      "field": 4,
+      "data": {
+        "value": "В 1993"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 47,
+    "fields": {
+      "product": 3,
+      "field": 5,
+      "data": {
+        "value": "1 международное общежитие АУЦА"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 48,
+    "fields": {
+      "product": 3,
+      "field": 6,
+      "data": {
+        "value": "Курсы программирования при АУЦА Devcit. Множество языковых курсов"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 49,
+    "fields": {
+      "product": 3,
+      "field": 7,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 50,
+    "fields": {
+      "product": 3,
+      "field": 8,
+      "data": {
+        "value": "Фото 3х4; Регистрационный взнос; Документ о среднем образовании; Копия пасспорта; Прохождение вступительного экзамена, который состоит из трех частей: тест на знание английского языка, написание сочинения и тест по математике. Предварительная регистрация на экзамен обязательна."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 51,
+    "fields": {
+      "product": 3,
+      "field": 9,
+      "data": {
+        "value": "24 000 сом в год"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 52,
+    "fields": {
+      "product": 3,
+      "field": 10,
+      "data": {
+        "value": "От 480 000 до 800 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 53,
+    "fields": {
+      "product": 3,
+      "field": 11,
+      "data": {
+        "value": "От 520 000 до 960 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 54,
+    "fields": {
+      "product": 3,
+      "field": 12,
+      "data": {
+        "value": "С каждым годом увеличивается в среднем на 16 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 55,
+    "fields": {
+      "product": 3,
+      "field": 13,
+      "data": {
+        "value": "ORT"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 56,
+    "fields": {
+      "product": 3,
+      "field": 14,
+      "data": {
+        "value": 16
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 57,
+    "fields": {
+      "product": 3,
+      "field": 15,
+      "data": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 58,
+    "fields": {
+      "product": 3,
+      "field": 16,
+      "data": {
+        "value": "Турниры по Легкой Атлетике; Спортакиады; Турниры по футболу, волейболу и баскетболу"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 59,
+    "fields": {
+      "product": 3,
+      "field": 17,
+      "data": {
+        "value": "Случаев развода в этом университете замечено не было"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 60,
+    "fields": {
+      "product": 3,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 61,
+    "fields": {
+      "product": 3,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 62,
+    "fields": {
+      "product": 3,
+      "field": 20,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 63,
+    "fields": {
+      "product": 3,
+      "field": 21,
+      "data": {
+        "value": "Смешанные отзывы, положительных больше"
+      }
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%A3%D0%A6%D0%90.png",
+      "name": "УЦА (Университет В Центральной Азии)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 64,
+    "fields": {
+      "product": 4,
+      "field": 1,
+      "data": {
+        "value": "Нарын, ул. Ленина 310"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 65,
+    "fields": {
+      "product": 4,
+      "field": 2,
+      "data": {
+        "value": "Английский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 66,
+    "fields": {
+      "product": 4,
+      "field": 3,
+      "data": {
+        "value": 25
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 67,
+    "fields": {
+      "product": 4,
+      "field": 4,
+      "data": {
+        "value": "В 2000"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 68,
+    "fields": {
+      "product": 4,
+      "field": 5,
+      "data": {
+        "value": "Всего 3 общежития, на территории университета"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 69,
+    "fields": {
+      "product": 4,
+      "field": 6,
+      "data": {
+        "value": "Клуб любителей Испанского языка; Клуб Любителей Йоги; Медиа-клуб УЦА; Дискуссионый Клуб"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 70,
+    "fields": {
+      "product": 4,
+      "field": 7,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 71,
+    "fields": {
+      "product": 4,
+      "field": 8,
+      "data": {
+        "value": "Документ государственного образца о среднем общем или среднем профессиональном образовании (аттестат); Оригинал сертификата ОРТ; Копия паспорта; Приписное свидетельство или военный билет; 4 фотографии размером 3х4; Первоначальный платеж в размере 30% от общей стоимости обучения;"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 72,
+    "fields": {
+      "product": 4,
+      "field": 9,
+      "data": {
+        "value": "16 000 сом в год"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 73,
+    "fields": {
+      "product": 4,
+      "field": 10,
+      "data": {
+        "value": "От 400 000 до 720 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 74,
+    "fields": {
+      "product": 4,
+      "field": 11,
+      "data": {
+        "value": "От 480 000 до 800 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 75,
+    "fields": {
+      "product": 4,
+      "field": 12,
+      "data": {
+        "value": "Прирост не замечен"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 76,
+    "fields": {
+      "product": 4,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 77,
+    "fields": {
+      "product": 4,
+      "field": 14,
+      "data": {
+        "value": 14
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 78,
+    "fields": {
+      "product": 4,
+      "field": 15,
+      "data": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 79,
+    "fields": {
+      "product": 4,
+      "field": 16,
+      "data": {
+        "value": "Футбольные поля, теннисные корты, фитнес клубы и спортивные залы, где можно играть в теннис, баскетбол, бадминтон, волейбол и футбол"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 80,
+    "fields": {
+      "product": 4,
+      "field": 17,
+      "data": {
+        "value": "Случаев развода в этом университете замечено не было"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 81,
+    "fields": {
+      "product": 4,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 82,
+    "fields": {
+      "product": 4,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 83,
+    "fields": {
+      "product": 4,
+      "field": 20,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 84,
+    "fields": {
+      "product": 4,
+      "field": 21,
+      "data": {
+        "value": "В основном положительные"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9A%D0%93%D0%AE%D0%90.png",
+      "name": "КГЮА (Кыргызская Государственная Юридическая Академия)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 85,
+    "fields": {
+      "product": 5,
+      "field": 1,
+      "data": {
+        "value": "Бишкек, просп. Чуй 180А"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 86,
+    "fields": {
+      "product": 5,
+      "field": 2,
+      "data": {
+        "value": "Русский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 87,
+    "fields": {
+      "product": 5,
+      "field": 3,
+      "data": {
+        "value": 40
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 88,
+    "fields": {
+      "product": 5,
+      "field": 4,
+      "data": {
+        "value": "В 1996"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 89,
+    "fields": {
+      "product": 5,
+      "field": 5,
+      "data": {
+        "value": "Информация об общежитиях отсутствует"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 90,
+    "fields": {
+      "product": 5,
+      "field": 6,
+      "data": {
+        "value": "Студенческий совет при Кгюа; Дискуссионый Клуб при КГЮА"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 91,
+    "fields": {
+      "product": 5,
+      "field": 7,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 92,
+    "fields": {
+      "product": 5,
+      "field": 8,
+      "data": {
+        "value": "Документ государственного образца о среднем общем или среднем профессиональном образовании (аттестат); Оригинал сертификата ОРТ; Копия паспорта; Приписное свидетельство или военный билет; 4 фотографии размером 3х4; Первоначальный платеж в размере 30% от общей стоимости обучения;"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 93,
+    "fields": {
+      "product": 5,
+      "field": 9,
+      "data": {
+        "value": "Стипендия доступна только если вы попали в программу «Института Конфуция», тогда стипендия в Китае будет составлять от 1400 до 1700 юаней"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 94,
+    "fields": {
+      "product": 5,
+      "field": 10,
+      "data": {
+        "value": "от 35 000 до 53 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 95,
+    "fields": {
+      "product": 5,
+      "field": 11,
+      "data": {
+        "value": "Не указано"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 96,
+    "fields": {
+      "product": 5,
+      "field": 12,
+      "data": {
+        "value": "Прирост не замечен"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 97,
+    "fields": {
+      "product": 5,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 98,
+    "fields": {
+      "product": 5,
+      "field": 14,
+      "data": {
+        "value": 7
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 99,
+    "fields": {
+      "product": 5,
+      "field": 15,
+      "data": {
+        "value": 16
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 100,
+    "fields": {
+      "product": 5,
+      "field": 16,
+      "data": {
+        "value": "Турниры по Легкой Атлетике; Спортакиады; Турниры по футболу, волейболу и баскетболу"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 101,
+    "fields": {
+      "product": 5,
+      "field": 17,
+      "data": {
+        "value": "Случаи развода в редких случаях был замечен"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 102,
+    "fields": {
+      "product": 5,
+      "field": 18,
+      "data": {
+        "value": "Средним показатель уровня коррупции в 11%. Средний показатель стоимости одного предмета - 1 290 сомов, одной сессии - 4 909 сомов."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 103,
+    "fields": {
+      "product": 5,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 104,
+    "fields": {
+      "product": 5,
+      "field": 20,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 105,
+    "fields": {
+      "product": 5,
+      "field": 21,
+      "data": {
+        "value": "Смешанные, отрицательных больше"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9A%D0%A0%D0%A1%D0%A3.png",
+      "name": "КРСУ (Киргизско-российский славянский университет)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 106,
+    "fields": {
+      "product": 6,
+      "field": 1,
+      "data": {
+        "value": "Бишкек, 6 просп. Чуй"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 107,
+    "fields": {
+      "product": 6,
+      "field": 2,
+      "data": {
+        "value": "Русский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 108,
+    "fields": {
+      "product": 6,
+      "field": 3,
+      "data": {
+        "value": 35
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 109,
+    "fields": {
+      "product": 6,
+      "field": 4,
+      "data": {
+        "value": "В 1992"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 110,
+    "fields": {
+      "product": 6,
+      "field": 5,
+      "data": {
+        "value": "3 общежития при уениверситете"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 111,
+    "fields": {
+      "product": 6,
+      "field": 6,
+      "data": {
+        "value": "Студенческий совет при КРСУ; Дискуссионый клуб при КРСУ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 112,
+    "fields": {
+      "product": 6,
+      "field": 7,
+      "data": {
+        "value": 2
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 113,
+    "fields": {
+      "product": 6,
+      "field": 8,
+      "data": {
+        "value": "Заявление на имя ректора с указанием факультета и специальности/направления;  Копия документа государственного образца о среднем образовании; Фотографии размером 3х4 см; Копия паспорта; Копии документов, Дающие право претендовать на особые условия приема и льготы; Сведения о результатах сдачи ЕГЭ (по желанию)."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 114,
+    "fields": {
+      "product": 6,
+      "field": 9,
+      "data": {
+        "value": "1500 сом в месяц"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 115,
+    "fields": {
+      "product": 6,
+      "field": 10,
+      "data": {
+        "value": "От 35 000 сом в месяц"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 116,
+    "fields": {
+      "product": 6,
+      "field": 11,
+      "data": {
+        "value": "От 35 000 сом в месяц"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 117,
+    "fields": {
+      "product": 6,
+      "field": 12,
+      "data": {
+        "value": "С каждым годом цена растет на 2000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 118,
+    "fields": {
+      "product": 6,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 119,
+    "fields": {
+      "product": 6,
+      "field": 14,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 120,
+    "fields": {
+      "product": 6,
+      "field": 15,
+      "data": {
+        "value": 16
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 121,
+    "fields": {
+      "product": 6,
+      "field": 16,
+      "data": {
+        "value": "Имеются дополнительные секции всех видов, а так же турниры по всем этим выдам секций"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 122,
+    "fields": {
+      "product": 6,
+      "field": 17,
+      "data": {
+        "value": "Случаи развода были замечены довольно часто"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 123,
+    "fields": {
+      "product": 6,
+      "field": 18,
+      "data": {
+        "value": "По КРСУ было выявлено, что средний показатель уровня коррупции составил 31%. В среднем сумма затраты на один предмет составила 1 920 сомов. Чтобы закрыть одну сессию, студенты КРСУ платят в среднем 4 270 сомов."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 124,
+    "fields": {
+      "product": 6,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 125,
+    "fields": {
+      "product": 6,
+      "field": 20,
+      "data": {
+        "value": 2
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 126,
+    "fields": {
+      "product": 6,
+      "field": 21,
+      "data": {
+        "value": "В большинстве отрицательные"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%85.png",
+      "name": "Политех - КГТУ (Кыргызский технический университет)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 127,
+    "fields": {
+      "product": 7,
+      "field": 1,
+      "data": {
+        "value": "Бишкек, пр.Мира, 66"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 128,
+    "fields": {
+      "product": 7,
+      "field": 2,
+      "data": {
+        "value": "Русский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 129,
+    "fields": {
+      "product": 7,
+      "field": 3,
+      "data": {
+        "value": 30
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 130,
+    "fields": {
+      "product": 7,
+      "field": 4,
+      "data": {
+        "value": "В 1954"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 131,
+    "fields": {
+      "product": 7,
+      "field": 5,
+      "data": {
+        "value": "3 общежития при университете"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 132,
+    "fields": {
+      "product": 7,
+      "field": 6,
+      "data": {
+        "value": "Студенческий Совет при КГТУ КВН при КГТУ Клуб программирования при КГТУ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 133,
+    "fields": {
+      "product": 7,
+      "field": 7,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 134,
+    "fields": {
+      "product": 7,
+      "field": 8,
+      "data": {
+        "value": "Документ о соответствующем образовании (школа, лицей, техникум); Сертификат ОРТ; Паспорт или другие документы, Удостоверяющие личность абитуриента; Копию приписного свидетельства (для военнообязанных); Фотографии (3х4) – 4 шт."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 135,
+    "fields": {
+      "product": 7,
+      "field": 9,
+      "data": {
+        "value": "1700 сом в год"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 136,
+    "fields": {
+      "product": 7,
+      "field": 10,
+      "data": {
+        "value": "Средняя цена от 33 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 137,
+    "fields": {
+      "product": 7,
+      "field": 11,
+      "data": {
+        "value": "Средняя цена от 33 000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 138,
+    "fields": {
+      "product": 7,
+      "field": 12,
+      "data": {
+        "value": "С каждым годом цена растет на 2000 сом"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 139,
+    "fields": {
+      "product": 7,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 140,
+    "fields": {
+      "product": 7,
+      "field": 14,
+      "data": {
+        "value": 8
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 141,
+    "fields": {
+      "product": 7,
+      "field": 15,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 142,
+    "fields": {
+      "product": 7,
+      "field": 16,
+      "data": {
+        "value": "Лёгкая и тяжёлая атлетика, гимнатсика,футбол, баскетбол, волейбол"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 143,
+    "fields": {
+      "product": 7,
+      "field": 17,
+      "data": {
+        "value": "Cлучаи развода были замечены очень часто"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 144,
+    "fields": {
+      "product": 7,
+      "field": 18,
+      "data": {
+        "value": "КГТУ средний показатель уровня коррупции - 50%. Средний показатель стоимости одного предмета – 1 222 сома, одной сессии - 4 700 сомов."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 145,
+    "fields": {
+      "product": 7,
+      "field": 19,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 146,
+    "fields": {
+      "product": 7,
+      "field": 20,
+      "data": {
+        "value": 3
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 147,
+    "fields": {
+      "product": 7,
+      "field": 21,
+      "data": {
+        "value": "В основном отрицательные"
+      }
+    }
+  }, {
+    "model": "api.product",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "photo_url": "https://vskg-public.s3-us-west-2.amazonaws.com/%D0%9C%D0%B0%D0%BD%D0%B0%D1%81.png",
+      "name": "КТУ Манас (Кыргызско-Турецкий университет)"
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 148,
+    "fields": {
+      "product": 7,
+      "field": 1,
+      "data": {
+        "value": "Бишкек, Микрорайон Джал"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 149,
+    "fields": {
+      "product": 7,
+      "field": 2,
+      "data": {
+        "value": "Турецкий, Кыргызский"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 150,
+    "fields": {
+      "product": 7,
+      "field": 3,
+      "data": {
+        "value": 25
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 151,
+    "fields": {
+      "product": 7,
+      "field": 4,
+      "data": {
+        "value": "В 1995"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 152,
+    "fields": {
+      "product": 7,
+      "field": 5,
+      "data": {
+        "value": "3 общежития на территории университета"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 153,
+    "fields": {
+      "product": 7,
+      "field": 6,
+      "data": {
+        "value": "Студенческий совет; Клуб дебатов; AIESEC; Музыкальные, танцевальные и языковые кружки"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 154,
+    "fields": {
+      "product": 7,
+      "field": 7,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 155,
+    "fields": {
+      "product": 7,
+      "field": 8,
+      "data": {
+        "value": "Аттестат или диплом о среднем профессиональном образовании и их копии; Оригинал и копия паспорта; 2 фотографии размером 3х4; Сертификат общереспубликанского тестирования и копия; Во время регистрации необходимо внести денежный взнос: За прохождение общего тестирования - 300 сомов, за тестирование по английскому языку - 300 сомов."
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 156,
+    "fields": {
+      "product": 7,
+      "field": 9,
+      "data": {
+        "value": "От 1500 сом в месяц"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 157,
+    "fields": {
+      "product": 7,
+      "field": 10,
+      "data": {
+        "value": "Все места бюджетные, все бесплатно"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 158,
+    "fields": {
+      "product": 7,
+      "field": 11,
+      "data": {
+        "value": "Все места бюджетные, все бесплатно и для иностранцев"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 159,
+    "fields": {
+      "product": 7,
+      "field": 12,
+      "data": {
+        "value": "Все бесплатно"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 160,
+    "fields": {
+      "product": 7,
+      "field": 13,
+      "data": {
+        "value": "ОРТ"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 161,
+    "fields": {
+      "product": 7,
+      "field": 14,
+      "data": {
+        "value": 9
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 162,
+    "fields": {
+      "product": 7,
+      "field": 15,
+      "data": {
+        "value": 2
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 163,
+    "fields": {
+      "product": 7,
+      "field": 16,
+      "data": {
+        "value": "Имеются дополнительные секции всех видов, а так же турниры по всем этим выдам секций"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 164,
+    "fields": {
+      "product": 7,
+      "field": 17,
+      "data": {
+        "value": "Cлучаев развода замечено не было"
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 165,
+    "fields": {
+      "product": 7,
+      "field": 18,
+      "data": {
+        "value": null
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 166,
+    "fields": {
+      "product": 7,
+      "field": 19,
+      "data": {
+        "value": 5
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 167,
+    "fields": {
+      "product": 7,
+      "field": 20,
+      "data": {
+        "value": 4
+      }
+    }
+  },
+  {
+    "model": "api.fieldvalue",
+    "pk": 168,
+    "fields": {
+      "product": 7,
+      "field": 21,
+      "data": {
+        "value": "В основном положительные"
+      }
+    }
+  }
+]
