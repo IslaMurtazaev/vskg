@@ -132,8 +132,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
+STATIC_URL = os.environ.get('STATIC_URL', '/static/')
+STATIC_ROOT = 'static/'
 
 # Pagination allows you to control how many objects per page are returned
 REST_FRAMEWORK = {
