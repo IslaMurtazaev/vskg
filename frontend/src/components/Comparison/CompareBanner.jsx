@@ -26,16 +26,16 @@ export default class CompareBanner extends Component {
                         <div className="comparison-banner__image">
                             <div className="comparison-banner__image-wrapper">
                                 <img
-                                    src="https://via.placeholder.com/280x220/3C59fFC/FFFFFF/"
-                                    alt="img"
+                                    src={product1.photo_url}
+                                    alt="product 1"
                                 />
                             </div>
                         </div>
                         <div className="comparison-banner__image">
                             <div className="comparison-banner__image-wrapper">
                                 <img
-                                    src="https://via.placeholder.com/280x220/3C59fFC/FFFFFF/"
-                                    alt="img"
+                                    src={product2.photo_url}
+                                    alt="product 2"
                                 />
                             </div>
                         </div>

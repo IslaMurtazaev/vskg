@@ -39,7 +39,7 @@ class CategoryBlock extends Component {
                                         id={category.id}
                                         title={category.name}
                                         category={category.name}
-                                        img="https://via.placeholder.com/280x480/3C59fFC/FFFFFF/"
+                                        img={category.photo_url}
                                     />
                                 ))
                         ) : (

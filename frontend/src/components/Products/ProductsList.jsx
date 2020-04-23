@@ -26,8 +26,8 @@ class ProductsList extends Component {
     componentDidMount() {
         axios.get('/categories/').then(res => {
             let category = res.data.results;
-            let categoryId = this.props.match.params.category_id;
-            const products = category.find(item => item.id == categoryId);
+            let categoryId = Number(this.props.match.params.category_id);
+            const products = category.find(item => item.id === categoryId);
             this.setState({ products: products.products, isLoading: false });
         });
     }
@@ -37,17 +37,14 @@ class ProductsList extends Component {
         const indexID = selectedProductID.indexOf(e.target.id);
         const indexName = selectedProductName.indexOf(e.target.value);
 
-        console.log(`selectedProduct: ${selectedProductName}`);
-
         e.target.checked && selectedProductID.length < 2
-            ? selectedProductID.push(e.target.id)
+            ? selectedProductID.push(Number(e.target.id))
             : selectedProductID.splice(indexID, 0);
 
         e.target.checked && selectedProductName.length < 2
             ? selectedProductName.push(e.target.value)
             : selectedProductName.splice(indexName, 0);
 
-        console.log(`indexOf: ${e.target.value}`);
         this.setState({
             selectedProductID,
             selectedProductName,
@@ -82,13 +79,13 @@ class ProductsList extends Component {
                                             value={product.name}
                                             onChange={this.setProduct}
                                             checked={selectedProductID.some(
-                                                item => item == product.id
+                                                item => item === product.id
                                             )}
                                         />
                                         <ProductCard
                                             key={product.id}
                                             title={product.name}
-                                            img="https://via.placeholder.com/280x220/3C59fFC/FFFFFF/"
+                                            img={product.photo_url}
                                         />
                                     </label>
                                 </div>
@@ -96,7 +93,7 @@ class ProductsList extends Component {
                         ) : (
                             <Skeleton count={4} width={280} height={520} />
                         )}
-                        {selectedProductName.length == 2 ? (
+                        {selectedProductName.length === 2 ? (
                             <CompareWindow
                                 product1={selectedProductName[0]}
                                 product2={selectedProductName[1]}

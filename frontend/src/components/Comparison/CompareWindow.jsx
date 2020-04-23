@@ -11,13 +11,13 @@ export default class CompareWindow extends Component {
         this.windowToggle = this.windowToggle.bind(this);
     }
     static propTypes = {
-        product1: PT.array.isRequired,
-        product2: PT.array.isRequired,
+        product1: PT.string.isRequired,
+        product2: PT.string.isRequired,
         compareLink: PT.string.isRequired,
         crearFunc: PT.func.isRequired,
     };
     windowToggle = () => {
-        this.state.height == 0
+        this.state.height === 0
             ? this.setState({
                   height: 139,
               })

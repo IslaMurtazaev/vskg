@@ -5,6 +5,6 @@ import axios from 'axios';
 import App from './App';
 import './index.scss';
 
-axios.defaults.baseURL = 'http://localhost:8000/api/v1';
+axios.defaults.baseURL = `${process.env.REACT_APP_API_URL}/api/v1`;
 
 ReactDOM.render(<App />, document.getElementById('root'));
