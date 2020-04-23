@@ -878,7 +878,7 @@
       "product": 3,
       "field": 13,
       "data": {
-        "value": "ORT"
+        "value": "ОРТ"
       }
     }
   },
@@ -1939,7 +1939,7 @@
     "model": "api.fieldvalue",
     "pk": 148,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 1,
       "data": {
         "value": "Бишкек, Микрорайон Джал"
@@ -1950,7 +1950,7 @@
     "model": "api.fieldvalue",
     "pk": 149,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 2,
       "data": {
         "value": "Турецкий, Кыргызский"
@@ -1961,7 +1961,7 @@
     "model": "api.fieldvalue",
     "pk": 150,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 3,
       "data": {
         "value": 25
@@ -1972,7 +1972,7 @@
     "model": "api.fieldvalue",
     "pk": 151,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 4,
       "data": {
         "value": "В 1995"
@@ -1983,7 +1983,7 @@
     "model": "api.fieldvalue",
     "pk": 152,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 5,
       "data": {
         "value": "3 общежития на территории университета"
@@ -1994,7 +1994,7 @@
     "model": "api.fieldvalue",
     "pk": 153,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 6,
       "data": {
         "value": "Студенческий совет; Клуб дебатов; AIESEC; Музыкальные, танцевальные и языковые кружки"
@@ -2005,7 +2005,7 @@
     "model": "api.fieldvalue",
     "pk": 154,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 7,
       "data": {
         "value": 4
@@ -2016,7 +2016,7 @@
     "model": "api.fieldvalue",
     "pk": 155,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 8,
       "data": {
         "value": "Аттестат или диплом о среднем профессиональном образовании и их копии; Оригинал и копия паспорта; 2 фотографии размером 3х4; Сертификат общереспубликанского тестирования и копия; Во время регистрации необходимо внести денежный взнос: За прохождение общего тестирования - 300 сомов, за тестирование по английскому языку - 300 сомов."
@@ -2027,7 +2027,7 @@
     "model": "api.fieldvalue",
     "pk": 156,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 9,
       "data": {
         "value": "От 1500 сом в месяц"
@@ -2038,7 +2038,7 @@
     "model": "api.fieldvalue",
     "pk": 157,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 10,
       "data": {
         "value": "Все места бюджетные, все бесплатно"
@@ -2049,7 +2049,7 @@
     "model": "api.fieldvalue",
     "pk": 158,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 11,
       "data": {
         "value": "Все места бюджетные, все бесплатно и для иностранцев"
@@ -2060,7 +2060,7 @@
     "model": "api.fieldvalue",
     "pk": 159,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 12,
       "data": {
         "value": "Все бесплатно"
@@ -2071,7 +2071,7 @@
     "model": "api.fieldvalue",
     "pk": 160,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 13,
       "data": {
         "value": "ОРТ"
@@ -2082,7 +2082,7 @@
     "model": "api.fieldvalue",
     "pk": 161,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 14,
       "data": {
         "value": 9
@@ -2093,7 +2093,7 @@
     "model": "api.fieldvalue",
     "pk": 162,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 15,
       "data": {
         "value": 2
@@ -2104,7 +2104,7 @@
     "model": "api.fieldvalue",
     "pk": 163,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 16,
       "data": {
         "value": "Имеются дополнительные секции всех видов, а так же турниры по всем этим выдам секций"
@@ -2115,7 +2115,7 @@
     "model": "api.fieldvalue",
     "pk": 164,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 17,
       "data": {
         "value": "Cлучаев развода замечено не было"
@@ -2126,7 +2126,7 @@
     "model": "api.fieldvalue",
     "pk": 165,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 18,
       "data": {
         "value": null
@@ -2137,7 +2137,7 @@
     "model": "api.fieldvalue",
     "pk": 166,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 19,
       "data": {
         "value": 5
@@ -2148,7 +2148,7 @@
     "model": "api.fieldvalue",
     "pk": 167,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 20,
       "data": {
         "value": 4
@@ -2159,7 +2159,7 @@
     "model": "api.fieldvalue",
     "pk": 168,
     "fields": {
-      "product": 7,
+      "product": 8,
       "field": 21,
       "data": {
         "value": "В основном положительные"
