@@ -46,8 +46,10 @@ pipeline {
     }
     post {
         always {
-            steps {
-                sh 'docker-compose down'
+            stage('Clean up containers') {
+                steps {
+                    sh 'docker-compose down'
+                }
             }
         }
     }
