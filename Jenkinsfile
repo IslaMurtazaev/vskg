@@ -44,13 +44,9 @@ pipeline {
     //         }
     //     }
     }
-    post {
-        always {
-            stage('Clean up containers') {
-                steps {
-                    sh 'docker-compose down'
-                }
-            }
-        }
-    }
+   post {
+      always {
+         sh "docker-compose down || true"
+      }
+   }
 }
