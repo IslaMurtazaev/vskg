@@ -2,7 +2,9 @@ pipeline {
     agent any
     stages {
         stage('Clone repository') {
-            checkout scm
+            steps {
+                checkout scm
+            }
         }
         stage('Run containers') {
             steps {
