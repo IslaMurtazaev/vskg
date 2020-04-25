@@ -6,8 +6,9 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Run containers') {
+        stage('Build and Run containers') {
             steps {
+                sh "docker-compose build"
                 sh 'docker-compose up -d'
                 sh 'docker-compose ps'
                 sh 'docker-compose exec -T backend python manage.py migrate'
@@ -18,15 +19,14 @@ pipeline {
             parallel {
                 stage('backend unit test') {
                     steps {
-                        dir('backend') {
-                            sh 'docker-compose exec -T backend python manage.py test'
-                        }
+                        sh 'docker-compose exec -T backend python manage.py test'
                     }
                 }
                 stage('frontend unit tests') {
                     steps {
                         dir('frontend') {
-                            sh 'docker-compose exec -T frontend yarn test'
+                            sh 'yarn'
+                            sh 'yarn test --coverage --silent'
                         }
                     }
                 }
