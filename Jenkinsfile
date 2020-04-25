@@ -6,11 +6,17 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build and Run containers') {
+        stage('Build container'){
+            steps{
+                sh 'docker-compose build'
+            }
+        }
+        stage('Run containers') {
             steps {
-                sh "docker-compose build"
                 sh 'docker-compose up -d'
-                sh 'docker-compose ps'
+                sleep 10
+                sh 'docker-compose restart'
+
                 sh 'docker-compose exec -T backend python manage.py migrate'
                 sh 'docker-compose exec -T backend python manage.py loaddata data.json'
             }
