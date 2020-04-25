@@ -10,8 +10,8 @@ pipeline {
             steps {
                 sh 'docker-compose up -d'
                 sh 'docker-compose ps'
-                sh 'docker-compose exec backend python manage.py migrate'
-                sh 'docker-compose exec backend python manage.py loaddata data.json'
+                sh 'docker-compose exec -T backend python manage.py migrate'
+                sh 'docker-compose exec -T backend python manage.py loaddata data.json'
             }
         }
         stage('Run tests') {
@@ -19,14 +19,14 @@ pipeline {
                 stage('backend unit test') {
                     steps {
                         dir('backend') {
-                            sh 'docker-compose exec backend python manage.py test'
+                            sh 'docker-compose exec -T backend python manage.py test'
                         }
                     }
                 }
                 stage('frontend unit tests') {
                     steps {
                         dir('frontend') {
-                            sh 'docker-compose exec frontend yarn test'
+                            sh 'docker-compose exec -T frontend yarn test'
                         }
                     }
                 }
