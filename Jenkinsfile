@@ -44,4 +44,11 @@ pipeline {
     //         }
     //     }
     }
+    post {
+        always {
+            steps {
+                sh 'docker-compose down'
+            }
+        }
+    }
 }
