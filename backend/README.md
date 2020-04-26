@@ -23,6 +23,10 @@ This is backend for "versus.kg" application
    and deactivated when you leave.
 
 # Running dev server
+Install prerequisites if using MySQL:
+```
+sudo apt-get install python3-dev default-libmysqlclient-dev
+```
 
 In activated virtualenv install requirements:
 ```
@@ -30,6 +34,10 @@ pip install -r requirements.txt
 ```
 
 Create new database in mysql and provide its credentials as environment variables
+```angular2html
+> CREATE DATABASE DATABASE_NAME CHARACTER SET utf8
+```
+
 ```
 MYSQL_ROOT_PASSWORD
 MYSQL_DATABASE
