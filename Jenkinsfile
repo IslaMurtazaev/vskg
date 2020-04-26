@@ -31,7 +31,7 @@ pipeline {
                 stage('frontend unit tests') {
                     steps {
                         dir('frontend') {
-                            sh 'yarn'
+                            sh 'sudo su jenkins -c "yarn"'
                             sh 'yarn test --coverage --silent'
                         }
                     }
