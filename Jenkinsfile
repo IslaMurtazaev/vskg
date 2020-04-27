@@ -6,7 +6,7 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build container'){
+        stage('Build container') {
             steps{
                 sh 'docker-compose build'
             }
@@ -32,7 +32,7 @@ pipeline {
                     steps {
                         dir('frontend') {
                             sh 'yarn'
-                            sh 'yarn test --coverage --silent'
+                            sh 'yarn test --watchAll=false --coverage --silent'
                         }
                     }
                 }
