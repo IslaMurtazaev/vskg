@@ -1,9 +1,5 @@
-runtime: python
+runtime: custom
 env: flex
-entrypoint: gunicorn -b :$PORT main.wsgi
 
 beta_settings:
     cloud_sql_instances: vs-kg-infra:us-central1:vs-kg-db
-
-runtime_config:
-  python_version: 3
