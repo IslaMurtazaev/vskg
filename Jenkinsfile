@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        GOOGLE_PROJECT_ID = 'vs-kg-infra';
+        GOOGLE_SERVICE_ACCOUNT_KEY = credentials('vs-kg-infra-service-account-key');
+    }
     stages {
         stage('Clone repository') {
             steps {
@@ -40,10 +44,7 @@ pipeline {
 //         }
         stage('Deploy containers') {
             steps {
-            	environment {
-                    GOOGLE_PROJECT_ID = 'vs-kg-infra';
-                    GOOGLE_SERVICE_ACCOUNT_KEY = credentials('vs-kg-infra-service-account-key');
-                }
+
                 withCredentials([file(credentialsId: 'vskg-dotenv-prod', variable: 'DOTENV')]) {
                     sh 'cat ${DOTENV} > /backend/.env'
                 }
