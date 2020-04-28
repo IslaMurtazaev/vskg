@@ -10,11 +10,11 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build container') {
-            steps{
-                sh 'docker-compose build'
-            }
-        }
+//         stage('Build container') {
+//             steps{
+//                 sh 'docker-compose build'
+//             }
+//         }
 //         stage('Run containers') {
 //             steps {
 //                 sh 'docker-compose up -d'
@@ -44,9 +44,8 @@ pipeline {
 //         }
         stage('Deploy containers') {
             steps {
-
                 withCredentials([file(credentialsId: 'vskg-dotenv-prod', variable: 'DOTENV')]) {
-                    sh 'cat ${DOTENV} > /backend/.env'
+                    sh 'cat ${DOTENV} > ./backend/.env'
                 }
                 sh 'gcloud config set project ${GOOGLE_PROJECT_ID};'
                 sh 'gcloud auth activate-service-account --key-file ${GOOGLE_SERVICE_ACCOUNT_KEY};'
