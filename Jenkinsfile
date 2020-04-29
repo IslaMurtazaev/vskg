@@ -49,12 +49,13 @@ pipeline {
                 }
                 sh 'gcloud config set project ${GOOGLE_PROJECT_ID};'
                 sh 'gcloud auth activate-service-account --key-file ${GOOGLE_SERVICE_ACCOUNT_KEY};'
-                dir('backend') {
-                    sh 'gcloud app deploy'
-                }
-//                 dir('frontend') {
+//                 dir('backend') {
 //                     sh 'gcloud app deploy'
 //                 }
+                dir('frontend') {
+                    sh 'gcloud builds submit --tag gcr.io/${GOOGLE_PROJECT_ID}/cra-cloud-run'
+                    sh 'gcloud beta run deploy --image gcr.io/${GOOGLE_PROJECT_ID}/cra-cloud-run --platform managed'
+                }
             }
         }
     }
