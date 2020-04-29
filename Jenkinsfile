@@ -54,7 +54,7 @@ pipeline {
 //                 }
                 dir('frontend') {
                     sh 'gcloud builds submit --tag gcr.io/${GOOGLE_PROJECT_ID}/cra-cloud-run'
-                    sh 'gcloud beta run deploy --image gcr.io/${GOOGLE_PROJECT_ID}/cra-cloud-run --platform managed'
+                    sh 'gcloud beta run deploy versus-kg --image gcr.io/vs-kg-infra/cra-cloud-run --platform managed --region us-central1'
                 }
             }
         }
