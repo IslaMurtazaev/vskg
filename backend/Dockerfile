@@ -9,8 +9,15 @@ RUN set -e; \
                 python3-dev \
                 postgresql-dev \
         ;
+
 RUN mkdir /backend
 WORKDIR /backend
+
 COPY requirements.txt /backend/
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
 COPY . /backend/
+
+EXPOSE 8080
+CMD ["/bin/bash"]
+ENTRYPOINT gunicorn -w 4 main.wsgi:application -b 0.0.0.0:8080
