@@ -1,24 +1,21 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import ReactDOM from 'react-dom';
+import React from "react";
 import { CategoryCard } from './../../components';
-import { unmountComponentAtNode } from "react-dom";
+import { shallow } from "enzyme";
 
-let container = null;
-beforeEach(() => {
-  // подготавливаем DOM-элемент, куда будем рендерить
-  container = document.createElement("div");
-  document.body.appendChild(container);
-});
+describe(CategoryCard.name, () => {
+    let wrapper = null
+    afterEach(() => {
+        wrapper = null;
+    })
 
-afterEach(() => {
-  // подчищаем после завершения
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
+    it('should render without crashing', () => {
+        shallow(<CategoryCard id={1} title="title" img="src/img" />);
+    });
 
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<CategoryCard />, div);
+    it('should display title', () => {
+        const title = 'Jest';
+        wrapper = shallow(<CategoryCard id={1} title={title} img={'src/jest_logo'} />);
+
+        expect(wrapper.find('.category__card-title h1').text()).toBe(title);
+    });
 });
