@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-import App from './App';
-import './index.scss';
+import App from './components/App';
+import './assets/styles/index.scss';
 
 axios.defaults.baseURL = `${process.env.REACT_APP_API_URL}/api/v1`;
 
