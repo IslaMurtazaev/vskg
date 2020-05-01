@@ -35,8 +35,8 @@ pipeline {
                 stage('frontend unit tests') {
                     steps {
                         dir('frontend') {
-//                             sh 'yarn'
-//                             sh 'yarn test --watchAll=false --coverage --silent'
+                            sh 'yarn'
+                            sh 'yarn test --watchAll=false --coverage --silent'
                         }
                     }
                 }
