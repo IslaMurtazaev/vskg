@@ -1,5 +1,29 @@
-# VS.kg
-Open source web application to make comparisons between whatever you want
+<p align="center">
+    <img width="400" src="https://i.postimg.cc/9Qb78sNX/logo.png" alt="logo" >
+</p>
+
+<h1 align="center"><b>VERSUS</b></h3>
+
+<p>Versus is a global comparison platform, providing unbiased and user-friendly comparisons across various categories. By providing accurate and objective information, as well as structured, easy-to-visualize data, we aim to ease decision-making. It is Open source web application to make comparisons between whatever you want.</p>
+
+## ⌨️ Collaborators
+
+- Team Lead  - Islam Murtazaev
+- Project Manager - Nasip Salmakhunov
+- Frontend developer - Baisalbek Daniiarov
+- Backend developer- Aidarbek Zamirbekov
+- Content Manager - Abdrakhman Niyazahunov
+- Content Manager - Abdraim Kenenbaev
+- UX/UI designer - Nurtilek Zakonbekov
+- QA engineer - Timur Zhusuev
+
+## 🔗 Usefull links
+- [Website](https://versus-kg-hp6yepnvwq-uc.a.run.app/)
+- [Figma Design](https://www.figma.com/file/Db5B1HNRJmFnXwCMV8Zupj/VERSUS?node-id=0%3A1)
+- [Telegram Bot](https://www.t.me/githubbot)
+
+&nbsp;
+
 
 ## 📦 Backend Installation instructions
 
