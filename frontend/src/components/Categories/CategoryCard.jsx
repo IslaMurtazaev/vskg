@@ -14,7 +14,7 @@ export default class CategoryCard extends Component {
     };
     render() {
         const { id, title, img } = this.props;
-        const disabled = id !== 1;
+        const disabled = id > 2;
         return (
                 <Link to={!disabled && `/category/${id}`}>
                     <div
